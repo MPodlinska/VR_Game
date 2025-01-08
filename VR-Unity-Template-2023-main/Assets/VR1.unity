@@ -1537,7 +1537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1493053703
 Transform:
   m_ObjectHideFlags: 0
@@ -1547,7 +1547,7 @@ Transform:
   m_GameObject: {fileID: 1493053702}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.114, y: 1.146, z: 0.62}
+  m_LocalPosition: {x: 0.1249, y: 1.146, z: 0.785}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1988,6 +1988,10 @@ PrefabInstance:
     - target: {fileID: 4257412417454173071, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
       propertyPath: m_Name
       value: Interactable Velocity Tracked Wedge
+      objectReference: {fileID: 0}
+    - target: {fileID: 4257412417454173071, guid: d5615d616019430d9c2e8727e71c97fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
