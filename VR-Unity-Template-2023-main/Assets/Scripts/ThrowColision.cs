@@ -10,6 +10,8 @@ public class ThrowCollision : MonoBehaviour
     private bool isThrown = false;   
     private XRGrabInteractable grabInteractable;  
     private Rigidbody rb;
+    public int points;
+    public static int total_points = 0;
 
     void Start()
     {
@@ -27,8 +29,17 @@ public class ThrowCollision : MonoBehaviour
     {
         if (other.CompareTag("Throw_Aim"))
         {
-            hasHitTarget = true;  
-            print($"{gameObject.name} hit the target!");
+            if (points < 4) // SprawdŸ, czy punkty s¹ poni¿ej limitu
+            {
+                hasHitTarget = true;
+                print($"{gameObject.name} hit the target!");
+                total_points += 1; // Zwiêksz punkty, ale tylko do 4
+                points = total_points;
+            }
+            else
+            {
+                print($"{gameObject.name} hit the target, but points are already at maximum!");
+            }
         }
     }
 

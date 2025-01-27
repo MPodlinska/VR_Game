@@ -16,31 +16,36 @@ public class MovementRecognizer : MonoBehaviour
     private bool isMoving = false;
     private List<Vector3> positionsList = new List<Vector3>();
 
+    public int points;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        points = ThrowCollision.total_points;
     }
 
     // Update is called once per frame
     void Update()
     {
+        points = ThrowCollision.total_points;
 
-
-        UnityEngine.XR.Interaction.Toolkit.InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputTreshold);
-
-        if (!isMoving && isPressed)
-        {
-            StartMovement();
+        if (points >= 4)
+        {       
+            UnityEngine.XR.Interaction.Toolkit.InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputTreshold);
+             if (!isMoving && isPressed)
+             {
+                 StartMovement();
+             }
+             else if (isMoving && !isPressed)
+             {
+                 EndMovement();
+             }
+             else if (isMoving && isPressed)
+             {
+                 UpdateMovement();
+             }
         }
-        else if (isMoving && !isPressed)
-        {
-            EndMovement();
-        }
-        else if (isMoving && isPressed)
-        {
-            UpdateMovement();
-        }
+       
     }
 
     void StartMovement()
