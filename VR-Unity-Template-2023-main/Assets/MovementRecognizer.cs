@@ -23,7 +23,7 @@ public class MovementRecognizer : MonoBehaviour
     public TextAsset[] gestureFiles;
 
     private List<string> requiredSequence = new List<string> { "line", "N" };
-    private int currentIndex = 0;
+    private static int currentIndex = 0;
 
     public int points;
 
@@ -89,12 +89,12 @@ public class MovementRecognizer : MonoBehaviour
         Result result = PointCloudRecognizer.Classify(candidate, gestures.ToArray());
         Debug.Log($"Recognized gesture: {result.GestureClass} with score: {result.Score}");
 
-        if (result.GestureClass == requiredSequence[currentIndex])
+        if (result.Score > 0.4)
         {
-            Debug.Log("Correct gesture!");
+            Debug.Log("Correct gesture! " + currentIndex + " " + result.Score);
             currentIndex++;
 
-            if (currentIndex >= requiredSequence.Count)
+            if (currentIndex >= 2 && result.Score > 0.4)
             {
                 Debug.Log("Sequence completed!");
                 currentIndex = 0;

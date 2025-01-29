@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9285,7 +9285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1924559088174160884, guid: 1525e13f9d85ecb4d9b54edf6725ea62, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.667
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 1924559088174160884, guid: 1525e13f9d85ecb4d9b54edf6725ea62, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9713,7 +9713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6141730210417092383, guid: 11c6c6691d9770f4d840bc4191bfa03a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.587847
+      value: 0.084
       objectReference: {fileID: 0}
     - target: {fileID: 6141730210417092383, guid: 11c6c6691d9770f4d840bc4191bfa03a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11008,7 +11008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 420392, guid: ab4ced4914b68784d8bf02aba7918f90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.354
+      value: -5.86
       objectReference: {fileID: 0}
     - target: {fileID: 420392, guid: ab4ced4914b68784d8bf02aba7918f90, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12523,63 +12523,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4721368864598036, guid: df2f14ece3a3a0847aad4f1407b39c50, type: 3}
   m_PrefabInstance: {fileID: 1082120006}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1992458466
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 104228, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_Name
-      value: instrument_trolley
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.757
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.469
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9342557
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.3566038
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427026, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8cdaaac046ad650478307f51f1f7886e, type: 3}
 --- !u!1001 &1997503174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14013,7 +13956,6 @@ SceneRoots:
   - {fileID: 1937191994}
   - {fileID: 1747501620}
   - {fileID: 355195110}
-  - {fileID: 1992458466}
   - {fileID: 663190139}
   - {fileID: 1283598477}
   - {fileID: 1472142603}
